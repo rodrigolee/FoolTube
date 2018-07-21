@@ -29,7 +29,7 @@ class App extends Component {
         });
     }
     render() {
-        const videoSearch = _debounce((term) => { this.videoSearch(term) }, 300);
+        const videoSearch = (term) => { this.videoSearch(term) };
         return (
         <div>
             <SearchBar onSearchTermChange = {term => this.videoSearch(term)}/>
